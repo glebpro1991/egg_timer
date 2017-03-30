@@ -1,0 +1,360 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Mar 29 22:02:38 2017
+# Process ID: 7872
+# Current directory: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/synth_2
+# Command line: vivado.exe -log egg_timer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source egg_timer.tcl
+# Log file: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/synth_2/egg_timer.vds
+# Journal file: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source egg_timer.tcl -notrace
+Command: synth_design -top egg_timer -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8072 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 293.188 ; gain = 83.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'egg_timer' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd:41]
+INFO: [Synth 8-4471] merging register 'clk_sec_reg' into 'int_clk_sec_reg' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd:88]
+INFO: [Synth 8-4471] merging register 'clk_LED_reg' into 'int_clk_LED_reg' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd:89]
+INFO: [Synth 8-4471] merging register 'clk_7seg_reg' into 'int_clk_7seg_reg' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/counter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/counter.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'bin2bcd_9bit' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin2bcd_9bit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcd_9bit' (3#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin2bcd_9bit.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'display_control' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/display_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'display_control' (4#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/display_control.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'bin_to_7seg' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin_to_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'bin_to_7seg' (5#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin_to_7seg.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'led_control' [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/led_control.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'led_control' (6#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/led_control.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'egg_timer' (7#1) [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 330.457 ; gain = 120.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 330.457 ; gain = 120.637
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/egg_timer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/egg_timer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 628.008 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "digit" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "selector1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 14    
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bin2bcd_9bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 14    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 9     
+Module display_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module led_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "display_ctrl/selector1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display_ctrl/digit" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_ctrl/selector_reg[2] )
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[0]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[1]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[2]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[3]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[4]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[5]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[6]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[7]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[8]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[9]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[10]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[11]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[12]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[13]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'led_control/led_reg[14]' (FDSE) to 'led_control/led_reg[15]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\led_control/led_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (display_ctrl/selector_reg[2]) is unused and will be removed from module egg_timer.
+WARNING: [Synth 8-3332] Sequential element (led_control/led_reg[15]) is unused and will be removed from module egg_timer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    76|
+|3     |LUT1   |   119|
+|4     |LUT2   |   127|
+|5     |LUT3   |    35|
+|6     |LUT4   |    49|
+|7     |LUT5   |    40|
+|8     |LUT6   |    24|
+|9     |FDRE   |   146|
+|10    |FDSE   |     3|
+|11    |IBUF   |     3|
+|12    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+----------------+------+
+|      |Instance        |Module          |Cells |
++------+----------------+----------------+------+
+|1     |top             |                |   650|
+|2     |  bin_to_7seg   |bin_to_7seg     |     7|
+|3     |  clock_divider |clk_div         |   308|
+|4     |  counter       |counter         |   147|
+|5     |  display_ctrl  |display_control |   157|
++------+----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 628.008 ; gain = 418.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 628.008 ; gain = 112.590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 628.008 ; gain = 418.188
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 628.008 ; gain = 417.289
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/synth_2/egg_timer.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 628.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 22:03:20 2017...

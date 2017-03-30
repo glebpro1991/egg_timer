@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Mar 29 22:02:07 2017
+# Process ID: 4400
+# Current directory: C:/Users/Gleb/Downloads/EE270_GroupProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6824 C:\Users\Gleb\Downloads\EE270_GroupProject\EE270_GroupProject.xpr
+# Log file: C:/Users/Gleb/Downloads/EE270_GroupProject/vivado.log
+# Journal file: C:/Users/Gleb/Downloads/EE270_GroupProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gleb/Downloads/EE270_GroupProject (2)' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin2bcd_9bit.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin2bcd_9bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin_to_7seg.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/bin_to_7seg.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/counter.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/counter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/display_control.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/display_control.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/led_control.vhd" into library xil_defaultlib [C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/sources_1/new/led_control.vhd:1]
+[Wed Mar 29 22:02:37 2017] Launched synth_2...
+Run output will be captured here: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/synth_2/runme.log
+launch_runs impl_2
+[Wed Mar 29 22:03:26 2017] Launched impl_2...
+Run output will be captured here: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream
+[Wed Mar 29 22:05:13 2017] Launched impl_2...
+Run output will be captured here: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 825.152 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698729A
+set_property PROGRAM.FILE {C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/egg_timer.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/egg_timer.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183698729A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698729A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698729A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/egg_timer.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183698729A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698729A
+exit

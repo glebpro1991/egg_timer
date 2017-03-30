@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Mar 29 21:50:24 2017
+# Process ID: 7676
+# Current directory: C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.runs/impl_2
+# Command line: vivado.exe -log egg_timer.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source egg_timer.tcl -notrace
+# Log file: C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.runs/impl_2/egg_timer.vdi
+# Journal file: C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source egg_timer.tcl -notrace

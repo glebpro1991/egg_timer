@@ -1,0 +1,12 @@
+0.6
+2016.4
+Dec 14 2016
+22:58:16
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sim_1/new/egg_timerTB.vhd,1490780705,vhdl,,,,egg_timertb,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/bin2bcd_9bit.vhd,1490776527,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,,,bin2bcd_9bit,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/bin_to_7seg.vhd,1490763636,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,,,bin_to_7seg,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/clk_div.vhd,1490818408,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,,,clk_div,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/counter.vhd,1490775249,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,,,counter,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/display_control.vhd,1490815728,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,,,display_control,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,1490780662,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sim_1/new/egg_timerTB.vhd,,,egg_timer,,,,,,,,
+C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/led_control.vhd,1490815563,vhdl,C:/Users/Gleb/Downloads/EE270_GroupProject (2)/EE270_GroupProject.srcs/sources_1/new/egg_timer.vhd,,,led_control,,,,,,,,

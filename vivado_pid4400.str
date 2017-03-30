@@ -1,0 +1,464 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 4400
+
+Current time: 	3/29/17 10:02:21 PM BST
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Gleb
+User home directory: C:/Users/Gleb
+User working directory: C:/Users/Gleb/Downloads/EE270_GroupProject
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Gleb/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Gleb/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	213 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 510 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Gleb\Downloads\EE270_GroupProject\EE270_GroupProject.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Gleb/Downloads/EE270_GroupProject (2)' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 40 MB (+39371kb) [00:00:06]
+// [Engine Memory]: 417 MB (+285952kb) [00:00:06]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 73 MB (+33060kb) [00:00:07]
+// [Engine Memory]: 461 MB (+24010kb) [00:00:07]
+// [Engine Memory]: 496 MB (+12556kb) [00:00:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 510 MB. GUI used memory: 36 MB. Current time: 3/29/17 10:02:21 PM BST
+// Project name: EE270_GroupProject; location: C:/Users/Gleb/Downloads/EE270_GroupProject; part: xc7a35tcpg236-1
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// [Engine Memory]: 527 MB (+6901kb) [00:00:25]
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 29 22:02:37 2017] Launched synth_2... Run output will be captured here: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/synth_2/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 540 MB. GUI used memory: 36 MB. Current time: 3/29/17 10:02:41 PM BST
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 
+// Tcl Message: [Wed Mar 29 22:03:26 2017] Launched impl_2... Run output will be captured here: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Implementation Completed: addNotify
+// Elapsed time: 77 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// 'cn' command handler elapsed time: 28 seconds
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream 
+// Tcl Message: [Wed Mar 29 22:05:13 2017] Launched impl_2... Run output will be captured here: C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/runme.log 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// [Engine Memory]: 558 MB (+4836kb) [00:03:17]
+// [GUI Memory]: 79 MB (+2322kb) [00:03:42]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 38 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Dec 14 2016-22:58:11     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 825.152 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698729A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/egg_timer.bit} [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 625 MB (+40632kb) [00:04:02]
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 637 MB. GUI used memory: 44 MB. Current time: 3/29/17 10:06:16 PM BST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7a35t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/egg_timer.bit} [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 660 MB (+4224kb) [00:04:09]
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698729A 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 981 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7a35t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.runs/impl_2/egg_timer.bit} [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698729A 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 23 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// [GUI Memory]: 84 MB (+264kb) [00:21:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 46 MB. Current time: 3/29/17 10:36:17 PM BST
+// [GUI Memory]: 88 MB (+1kb) [00:40:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 44 MB. Current time: 3/29/17 11:06:19 PM BST
+// [GUI Memory]: 92 MB (+137kb) [01:15:34]
+// HMemoryUtils.trashcanNow. Engine heap size: 671 MB. GUI used memory: 37 MB. Current time: 3/29/17 11:36:21 PM BST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 671 MB. GUI used memory: 37 MB. Current time: 3/30/17 12:06:22 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 671 MB. GUI used memory: 37 MB. Current time: 3/30/17 12:36:24 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 681 MB. GUI used memory: 37 MB. Current time: 3/30/17 12:58:05 AM BST
+// Elapsed time: 9291 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("egg_timer.vhd", 216, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 681 MB. GUI used memory: 40 MB. Current time: 3/30/17 1:28:07 AM BST
+// Elapsed time: 2119 seconds
+selectCodeEditor("egg_timer.vhd", 197, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 719 MB (+26322kb) [03:33:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 719 MB. GUI used memory: 43 MB. Current time: 3/30/17 1:35:27 AM BST
+// Elapsed time: 581 seconds
+selectCodeEditor("egg_timer.vhd", 194, 259); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 719 MB. GUI used memory: 51 MB. Current time: 3/30/17 2:05:29 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 719 MB. GUI used memory: 48 MB. Current time: 3/30/17 2:35:31 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 719 MB. GUI used memory: 49 MB. Current time: 3/30/17 3:05:33 AM BST
+// Elapsed time: 6572 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), counter - counter - Behavioral (counter.vhd)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), counter - counter - Behavioral (counter.vhd)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 39 seconds
+selectCodeEditor("counter.vhd", 664, 422); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 109 seconds
+selectCodeEditor("counter.vhd", 466, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 719 MB. GUI used memory: 55 MB. Current time: 3/30/17 3:35:35 AM BST
+// Elapsed time: 676 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin2bcd_conv - bin2bcd_9bit - Behavioral (bin2bcd_9bit.vhd)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin2bcd_conv - bin2bcd_9bit - Behavioral (bin2bcd_9bit.vhd)]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("bin2bcd_9bit.vhd", 124, 73); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 97 MB (+415kb) [05:45:12]
+// Elapsed time: 161 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "egg_timer.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 272 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin2bcd_9bit.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 719 MB. GUI used memory: 63 MB. Current time: 3/30/17 4:05:37 AM BST
+// Elapsed time: 951 seconds
+selectCodeEditor("bin2bcd_9bit.vhd", 162, 409, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+selectCodeEditor("bin2bcd_9bit.vhd", 161, 386); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 103 MB (+1059kb) [06:16:40]
+// Elapsed time: 713 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin2bcd_9bit.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "egg_timer.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin2bcd_9bit.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin2bcd_conv - bin2bcd_9bit - Behavioral (bin2bcd_9bit.vhd)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), counter - counter - Behavioral (counter.vhd)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), display_ctrl - display_control - Behavioral (display_control.vhd)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), display_ctrl - display_control - Behavioral (display_control.vhd)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("display_control.vhd", 455, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 111 MB (+3040kb) [06:26:17]
+// Elapsed time: 485 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "egg_timer.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin2bcd_conv - bin2bcd_9bit - Behavioral (bin2bcd_9bit.vhd)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("clk_div.vhd", 408, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 84 seconds
+selectCodeEditor("display_control.vhd", 666, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 59 seconds
+selectCodeEditor("display_control.vhd", 290, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 75 MB. Current time: 3/30/17 4:35:38 AM BST
+// Elapsed time: 269 seconds
+selectCodeEditor("display_control.vhd", 379, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 185 seconds
+selectCodeEditor("display_control.vhd", 80, 434); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 505, 443); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 740 MB. GUI used memory: 71 MB. Current time: 3/30/17 4:42:54 AM BST
+// Elapsed time: 560 seconds
+selectCodeEditor("display_control.vhd", 119, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 261, 226); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 338, 253); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 265, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 364, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 313, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 382, 193); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 261, 149); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 250, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 265, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 478, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 147, 494); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 170, 490); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 131, 487); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 172, 514); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 132, 507); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 140, 522); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 125, 516); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 71, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 148, 520); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 139, 544); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 103, 532); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 172, 552); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("display_control.vhd", 304, 547); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("display_control.vhd", 148, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 194, 372); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 191, 387); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 306, 536, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+// Elapsed time: 170 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin2bcd_9bit.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_div.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin_to_7seg - bin_to_7seg - Behavioral (bin_to_7seg.vhd)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin_to_7seg - bin_to_7seg - Behavioral (bin_to_7seg.vhd)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("bin_to_7seg.vhd", 455, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 746 MB. GUI used memory: 75 MB. Current time: 3/30/17 5:12:55 AM BST
+// Elapsed time: 1431 seconds
+selectCodeEditor("bin_to_7seg.vhd", 274, 331); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 233, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 65 seconds
+selectCodeEditor("bin_to_7seg.vhd", 275, 331); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 236, 363); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 761 MB. GUI used memory: 67 MB. Current time: 3/30/17 5:19:11 AM BST
+// [Engine Memory]: 761 MB (+6602kb) [07:16:59]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 398 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_div.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "egg_timer.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 377 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin_to_7seg.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 129, 273); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 151, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 357, 274); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 112, 518); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bin_to_7seg.vhd", 353, 549); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 193 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_div.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("display_control.vhd", 567, 316); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("display_control.vhd", 85, 330); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 169 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin_to_7seg - bin_to_7seg - Behavioral (bin_to_7seg.vhd)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), led_control - led_control - Behavioral (led_control.vhd)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), led_control - led_control - Behavioral (led_control.vhd)]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), bin2bcd_conv - bin2bcd_9bit - Behavioral (bin2bcd_9bit.vhd)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), counter - counter - Behavioral (counter.vhd)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, egg_timer - Behavioral (egg_timer.vhd), clock_divider - clk_div - Behavioral (clk_div.vhd)]", 2, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("clk_div.vhd", 156, 223); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 376 seconds
+selectCodeEditor("clk_div.vhd", 349, 57); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 270, 33); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 363, 40); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 118 MB (+1203kb) [07:44:26]
+// Elapsed time: 199 seconds
+selectCodeEditor("clk_div.vhd", 205, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 761 MB. GUI used memory: 90 MB. Current time: 3/30/17 5:49:12 AM BST
+// Elapsed time: 138 seconds
+selectCodeEditor("clk_div.vhd", 96, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 15, 195); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 39, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 402, 135); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("clk_div.vhd", 134, 208); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 85, 333); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("clk_div.vhd", 395, 361); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 352, 94); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("clk_div.vhd", 575, 92); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("clk_div.vhd", 355, 380); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 124 MB (+191kb) [07:54:50]
+// Elapsed time: 364 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_control.vhd", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
