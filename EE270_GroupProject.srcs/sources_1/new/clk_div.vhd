@@ -41,21 +41,17 @@ end clk_div;
 
 architecture Behavioral of clk_div is
     constant max_count_sec    : integer := 50000000;     --100*10^6 clock cycles every second (1Hz)
-    --constant max_count_LED    : integer := 50000000;      --50*10^6 clock cycles every half second (2Hz)
     constant max_count_7_seg  : integer := 400000;        --4*10^5 clock cycles every 4 ms  (250 Hz)
     
     --for testing
-    --constant max_count_sec    : integer := 100;     --100*10^6 clock cycles every second (1Hz)
-    --constant max_count_LED    : integer := 50;      --50*10^6 clock cycles every half second (2Hz)
+    --constant max_count_sec    : integer := 50;      --50*10^6 clock cycles every half second (2Hz)
     --constant max_count_7_seg  : integer := 4;        --4*10^5 clock cycles every 4 ms  (250 Hz)
 begin
   clk_divide : process (clk_in) is
     variable count_sec      : integer   := 0;    --counter for seconds
-    --variable count_LED      : integer   := 0;    --counter for seconds
     variable count_7_seg    : integer   := 0;    --counter for 16ms
     
     variable int_clk_sec    : std_logic := '0';  --internal clock for seconds
-    --variable int_clk_LED    : std_logic := '0';  --internal clock for 0.5s
     variable int_clk_7seg  : std_logic := '0';  --internal clock for 16ms                  
   begin
   
@@ -67,13 +63,6 @@ begin
         int_clk_sec := not int_clk_sec;
       end if;
       
-      --if count_LED <= max_count_LED then
-              --count_LED := count_LED + 1;
-      --else
-         --count_LED := 0;
-         --int_clk_LED := not int_clk_LED;
-      --end if;
-      
       if count_7_seg <= max_count_7_seg then
          count_7_seg := count_7_seg + 1;
       else          
@@ -82,7 +71,6 @@ begin
       end if;      
       
       clk_sec    <= int_clk_sec;
-      --clk_LED    <= int_clk_LED;
       clk_7seg  <= int_clk_7seg;
       
     end if;
