@@ -44,7 +44,7 @@ begin
 
   led_ctrl : process (clk, seconds, enable) is
   
-    variable on_off : integer := 0;
+    variable on_off : integer := 1;
   
   begin
   
@@ -54,6 +54,9 @@ begin
         else
             led <= "0000000000000000";
         end if;
+        
+        on_off := (on_off + 1) mod 2;
+        
     end if;
     
   end process;

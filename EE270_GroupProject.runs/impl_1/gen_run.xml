@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1490816274">
+  <File Type="PWROPT-DRC" Name="egg_timer_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="egg_timer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="egg_timer_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="egg_timer_power_routed.rpx"/>
   <File Type="PA-TCL" Name="egg_timer.tcl"/>
-  <File Type="INIT-TIMING" Name="egg_timer_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="egg_timer_methodology_drc_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="egg_timer_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="egg_timer.hwdef"/>
   <File Type="RDI-RDI" Name="egg_timer.vdi"/>
   <File Type="OPT-DCP" Name="egg_timer_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="egg_timer.hwdef"/>
   <File Type="OPT-DRC" Name="egg_timer_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="egg_timer_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="egg_timer_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="egg_timer_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="egg_timer_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="egg_timer_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="egg_timer_drc_routed.rpx"/>
   <File Type="BG-BIN" Name="egg_timer.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="egg_timer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="egg_timer_drc_routed.rpx"/>
   <File Type="BG-DRC" Name="egg_timer.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="egg_timer_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="egg_timer_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MSK" Name="egg_timer.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="egg_timer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="egg_timer_methodology_drc_routed.rpx"/>
   <File Type="BG-BGN" Name="egg_timer.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="egg_timer_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="egg_timer_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="egg_timer_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="egg_timer_route_status.rpt"/>

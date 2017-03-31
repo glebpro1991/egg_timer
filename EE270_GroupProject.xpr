@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/Gleb/Desktop/EE270_GroupProject/EE270_GroupProject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="760e99cffac2473391d01a474c2ba5b7"/>

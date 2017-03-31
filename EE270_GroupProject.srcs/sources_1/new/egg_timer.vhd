@@ -36,7 +36,7 @@ entity egg_timer is
            mode : in STD_LOGIC;
            clk : in STD_LOGIC;
            a_to_g : out STD_LOGIC_VECTOR (6 downto 0);
-           seg_sel : out STD_LOGIC_VECTOR (2 downto 0);
+           seg_sel : out STD_LOGIC_VECTOR (3 downto 0);
            led : out STD_LOGIC_VECTOR (15 downto 0));
 end egg_timer;
 
@@ -56,14 +56,15 @@ begin
         clock_divider: entity work.clk_div
             port map( clk_in    => clk,
                       clk_sec   => clk_sec,
-                      clk_7seg  => clk_7seg,
-                      clk_LED   => clk_LED
+                      clk_7seg  => clk_7seg
+                      --clk_LED   => clk_LED
                      );
                      
         counter:       entity work.counter
             port map( mode         => mode,
                       start_reset  => start_reset,
                       clk          => clk_sec,
+                      clk_7seg     => clk_7seg,
                       seconds      => seconds
                     );
         bin2bcd_conv:  entity work.bin2bcd_9bit
@@ -79,7 +80,7 @@ begin
                       hundreds => hundreds,
                       enable   => start_reset,
                       clk_7seg => clk_7seg,
-                      clk_LED  => clk_LED,
+                      clk_sec  => clk_sec,
                       digit    => digit,
                       seg_sel  => seg_sel
                      );
@@ -92,7 +93,7 @@ begin
         led_control: entity work.led_control
              port map( enable  => start_reset,
                        seconds => seconds,
-                       clk     => clk_LED,
+                       clk     => clk_sec,
                        led    => led
                       ); 
      

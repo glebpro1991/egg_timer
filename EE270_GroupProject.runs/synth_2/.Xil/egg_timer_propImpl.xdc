@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Gleb/Downloads/EE270_GroupProject/EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc rfile:../../../EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Gleb/Desktop/EE270_GroupProject/EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc rfile:../../../EE270_GroupProject.srcs/constrs_1/imports/EE270_GroupProject/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
@@ -57,3 +57,5 @@ set_property src_info {type:XDC file:1 line:102 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN U4 [get_ports {seg_sel[1]}]
 set_property src_info {type:XDC file:1 line:104 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V4 [get_ports {seg_sel[2]}]
+set_property src_info {type:XDC file:1 line:106 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W4 [get_ports {seg_sel[3]}]

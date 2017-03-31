@@ -35,6 +35,7 @@ entity counter is
     Port ( mode : in STD_LOGIC;
            start_reset : in STD_LOGIC;
            clk : in STD_LOGIC;
+           clk_7seg : in STD_LOGIC;
            seconds : out STD_LOGIC_VECTOR (8 downto 0));
 end counter;
 
@@ -45,12 +46,11 @@ architecture Behavioral of counter is
 
 begin
 
-  down_counter : process (clk) is
+  down_counter : process (clk, clk_7seg) is
   
   variable seconds_left : integer;
   
   begin
-   if rising_edge(clk) then
         if (start_reset = '0') then
             if (mode = '1') then
                 seconds_left := hard_boiled_egg_time;
@@ -58,12 +58,11 @@ begin
                 seconds_left := soft_boiled_egg_time;
             end if;
         else
-            if seconds_left /= 0 then
-                seconds_left := seconds_left - 1;
-                seconds <= std_logic_vector(to_unsigned(seconds_left,9));
+            if rising_edge(clk)  and seconds_left >= 0 then
+               seconds_left := seconds_left - 1;
+               seconds <= std_logic_vector(to_unsigned(seconds_left,9));
             end if;
        end if;
-    end if;
   end process;
 
 

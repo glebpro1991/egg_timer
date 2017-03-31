@@ -37,16 +37,17 @@ entity display_control is
            hundreds    : in STD_LOGIC_VECTOR (3 downto 0);
            enable      : in STD_LOGIC;
            clk_7seg    : in STD_LOGIC;
-           clk_LED     : in STD_LOGIC;
+           clk_sec     : in STD_LOGIC;
+           -- clk_LED     : in STD_LOGIC;
            digit   : out STD_LOGIC_VECTOR (3 downto 0);
-           seg_sel : out STD_LOGIC_VECTOR (2 downto 0));
+           seg_sel : out STD_LOGIC_VECTOR (3 downto 0));
 end display_control;
 
 architecture Behavioral of display_control is
 
 begin
 
-  seconds_refresh : process (clk_7seg, clk_LED, ones, tens, hundreds, enable) is
+  seconds_refresh : process (clk_7seg, clk_sec, ones, tens, hundreds, enable) is
   
     variable selector : integer := 0;
     variable ones_int : integer := to_integer(unsigned(ones));
@@ -63,7 +64,7 @@ begin
             hundreds_int := to_integer(unsigned(hundreds));
             
             if selector = 0 then
-                seg_sel <= "011";
+                seg_sel <= "1011";
                 if hundreds_int = 0 then             
                     digit   <= "1111"; --invalid state - won't display anything               
                 else            
@@ -72,7 +73,7 @@ begin
             end if;
     
             if selector = 1 then
-                seg_sel <= "101";
+                seg_sel <= "1101";
                 if hundreds_int = 0 and tens_int = 0 then             
                     digit   <= "1111"; --invalid state - won't display anything                
                 else            
@@ -82,9 +83,9 @@ begin
             end if;        
     
             if selector = 2 then
-                seg_sel <= "110";
+                seg_sel <= "1110";
                 if hundreds_int = 0 and tens_int = 0 and ones_int = 0  then             
-                    if clk_LED = '1' then
+                    if clk_sec = '1' then
                         digit <= ones;
                     else
                         digit <= "1111"; --blinking 0 synchronized with LEDs
@@ -95,7 +96,7 @@ begin
             end if;
             selector := (selector + 1) mod 3; --0, 1, 2, 0 , 1 ,2 etc      
         else    
-            seg_sel <= "111";
+            seg_sel <= "1111";
         end if;
     end if;
     

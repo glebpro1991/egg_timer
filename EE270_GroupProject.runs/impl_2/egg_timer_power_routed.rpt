@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date             : Wed Mar 29 22:04:39 2017
+| Date             : Fri Mar 31 05:41:26 2017
 | Host             : Work-PC running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file egg_timer_power_routed.rpt -pb egg_timer_power_summary_routed.pb -rpx egg_timer_power_routed.rpx
 | Design           : egg_timer
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 0.101 |
-| Dynamic (W)              | 0.030 |
+| Dynamic (W)              | 0.029 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.5  |
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |      532 |       --- |             --- |
-|   LUT as Logic |     0.002 |      226 |     20800 |            1.09 |
-|   CARRY4       |    <0.001 |       76 |      8150 |            0.93 |
-|   Register     |    <0.001 |      149 |     41600 |            0.36 |
+| Slice Logic    |     0.002 |      506 |       --- |             --- |
+|   LUT as Logic |     0.002 |      206 |     20800 |            0.99 |
+|   CARRY4       |    <0.001 |       62 |      8150 |            0.76 |
+|   Register     |    <0.001 |      141 |     41600 |            0.34 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |     0.002 |      307 |       --- |             --- |
-| I/O            |     0.024 |       29 |       106 |           27.36 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |     0.002 |      321 |       --- |             --- |
+| I/O            |     0.024 |       30 |       106 |           28.30 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.101 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -69,7 +69,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.015 |       0.005 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
 | Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,11 +138,12 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| egg_timer       |     0.030 |
+| egg_timer       |     0.029 |
 |   bin_to_7seg   |    <0.001 |
-|   clock_divider |     0.002 |
-|   counter       |     0.002 |
+|   clock_divider |     0.001 |
+|   counter       |     0.001 |
 |   display_ctrl  |     0.002 |
+|   led_control   |    <0.001 |
 +-----------------+-----------+
 
 

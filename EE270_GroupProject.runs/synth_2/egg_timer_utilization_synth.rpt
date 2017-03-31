@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Wed Mar 29 22:03:20 2017
+| Date         : Fri Mar 31 05:39:54 2017
 | Host         : Work-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file egg_timer_utilization_synth.rpt -pb egg_timer_utilization_synth.pb
 | Design       : egg_timer
@@ -30,12 +30,12 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  320 |     0 |     20800 |  1.54 |
-|   LUT as Logic          |  320 |     0 |     20800 |  1.54 |
+| Slice LUTs*             |  269 |     0 |     20800 |  1.29 |
+|   LUT as Logic          |  269 |     0 |     20800 |  1.29 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  149 |     0 |     41600 |  0.36 |
-|   Register as Flip Flop |  149 |     0 |     41600 |  0.36 |
-|   Register as Latch     |    0 |     0 |     41600 |  0.00 |
+| Slice Registers         |  126 |     0 |     41600 |  0.30 |
+|   Register as Flip Flop |  124 |     0 |     41600 |  0.30 |
+|   Register as Latch     |    2 |     0 |     41600 | <0.01 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
@@ -54,10 +54,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
-| 3     |          Yes |         Set |            - |
-| 146   |          Yes |       Reset |            - |
+| 8     |          Yes |           - |          Set |
+| 32    |          Yes |           - |        Reset |
+| 1     |          Yes |         Set |            - |
+| 85    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   29 |     0 |       106 | 27.36 |
+| Bonded IOB                  |   30 |     0 |       106 | 28.30 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -149,18 +149,21 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  146 |        Flop & Latch |
-| LUT2     |  127 |                 LUT |
-| LUT1     |  119 |                 LUT |
-| CARRY4   |   76 |          CarryLogic |
-| LUT4     |   49 |                 LUT |
-| LUT5     |   40 |                 LUT |
-| LUT3     |   35 |                 LUT |
-| OBUF     |   26 |                  IO |
-| LUT6     |   24 |                 LUT |
+| LUT2     |  105 |                 LUT |
+| LUT1     |  103 |                 LUT |
+| FDRE     |   85 |        Flop & Latch |
+| CARRY4   |   62 |          CarryLogic |
+| LUT4     |   48 |                 LUT |
+| LUT5     |   39 |                 LUT |
+| LUT3     |   34 |                 LUT |
+| FDCE     |   30 |        Flop & Latch |
+| OBUF     |   27 |                  IO |
+| LUT6     |   27 |                 LUT |
+| FDPE     |    8 |        Flop & Latch |
 | IBUF     |    3 |                  IO |
-| FDSE     |    3 |        Flop & Latch |
+| LDCE     |    2 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
+| FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 
